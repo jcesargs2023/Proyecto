@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="pagotargeta.css">
+</head>
+<body>
+	
+
+	<form action="procesar_pago.php" method="POST">
+		<header>
+			<h1>Pagos por tarjeta de crédito</h1>
+		</header>
+		
+	  <label for="razon_social">Razón social:</label>
+	  <input type="text" id="razon_social" name="razon_social" required><br>
+	
+	  <label for="nit">NIT:</label>
+	  <input type="text" id="nit" name="nit" required><br>
+	
+	  <label for="pago_realizado">Pago realizado:</label>
+	  <input type="number" id="pago_realizado" name="pago_realizado" min="1" required><br>
+	
+	  <label for="fecha_pago">Fecha de pago:</label>
+	  <input type="date" id="fecha_pago" name="fecha_pago" required><br>
+	
+	  <label for="banco">Banco:</label>
+	  <select id="banco" name="banco" required>
+		<option value="">Seleccione un banco</option>
+		<option value="Banco A">Bancolombia</option>
+		<option value="Banco B">Davivienda</option>
+		<option value="Banco C">Banco de Bogota</option>
+	  </select><br>
+	
+	  <input type="submit" value="Pagar">
+	  <footer>
+
+
+	  </footer>
+	</form>
+	
+	  
+
+</body>
+</html>

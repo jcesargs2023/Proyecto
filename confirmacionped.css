@@ -1,0 +1,30 @@
+/* Estilos para el contenedor */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+/* Estilos para el encabezado */
+h1 {
+	margin-bottom: 30px;
+}
+
+/* Estilos para las filas */
+.row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	align-items: start;
+}
+.column3{
+	padding: 0px;
+}
+
